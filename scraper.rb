@@ -94,9 +94,8 @@ class Scraper
 					images = offer.xpath('.//img')
 					price_html = offer.xpath('.//h3')
 					link = offer.xpath('.//a[starts-with(@href, "https://www.otomoto.pl/osobowe/oferta") and @target="_self"]')
-					@logger.info("link: #{link}")
+
 					href_value = link.attribute('href').value
-					@logger.info("link: #{href_value}")
 					model = link.text.strip
 					price = price_html.text.strip
 	

@@ -2464,3 +2464,11 @@ I, [2024-07-23T10:01:42.835810 #6292]  INFO -- : link: https://www.otomoto.pl/os
 I, [2024-07-23T10:01:42.836152 #6292]  INFO -- : link: <a href="https://www.otomoto.pl/osobowe/oferta/bmw-x3-bmw-x3-xdrive30d-m-sport-ID6GB3ek.html" target="_self">BMW X3 xDrive30d Sport-Aut M Sport</a>
 I, [2024-07-23T10:01:42.836371 #6292]  INFO -- : link: https://www.otomoto.pl/osobowe/oferta/bmw-x3-bmw-x3-xdrive30d-m-sport-ID6GB3ek.html
 I, [2024-07-23T10:01:42.836634 #6292]  INFO -- : Finished scraping data. Total cars scraped: 64
+I, [2024-07-23T10:11:08.972400 #10132]  INFO -- : Starting to scrape data from https://www.otomoto.pl/osobowe/ for brand audi
+I, [2024-07-23T10:11:08.972925 #10132]  INFO -- : link: 
+E, [2024-07-23T10:11:08.973169 #10132] ERROR -- : Error while scraping page https://www.otomoto.pl/osobowe/audi?page=1: undefined method `value' for nil
+I, [2024-07-23T10:11:08.973514 #10132]  INFO -- : link: 
+E, [2024-07-23T10:11:08.973720 #10132] ERROR -- : Error while scraping page https://www.otomoto.pl/osobowe/audi?page=2: undefined method `value' for nil
+I, [2024-07-23T10:11:08.973893 #10132]  INFO -- : Finished scraping data. Total cars scraped: 0
+I, [2024-07-23T10:36:38.334563 #25659]  INFO -- : Starting to scrape data from https://www.otomoto.pl/osobowe/ for brand bmw
+I, [2024-07-23T10:36:42.541297 #25659]  INFO -- : Finished scraping data. Total cars scraped: 64
