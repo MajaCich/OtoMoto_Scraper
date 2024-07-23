@@ -27,8 +27,12 @@ class PDF_Generator
      # Define the path to your ERB template
      template_path = './html_templates/template.erb'
 
-     # Read the template file
-     template = File.read(template_path)
+     begin
+      # Read the template file
+      template = File.read(template_path)
+     rescue
+      @logger.warn("Error while opening file")
+     end
  
      # Create an ERB instance with the template
      erb = ERB.new(template)
@@ -62,8 +66,13 @@ class PDF_Generator
     # Define the path to your ERB template
     template_path = './html_templates/template_table.html.erb'
 
+    begin
     # Read the template file
     template = File.read(template_path)
+    rescue
+      @logger.warn("Error while opening file")
+    end
+
 
     # Create an ERB instance with the template
     erb = ERB.new(template)
