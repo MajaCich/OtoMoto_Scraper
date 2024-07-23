@@ -1,0 +1,6 @@
+scraper.rb 1f66b0f08f7a558841ba39a4a9041572c738a383
+pdf_generator.rb 30d4651b69dc18236e533b3bada2f7a8a56ba5fb
+script.rb cdccef6be9b04e73c7057009be23ab9e05852228
+car.rb 9e0e0d08c02dbb37caf2b11005ef04891d2e8a79
+spec/pdf_generator_spec.rb 967ce0d9bfed2a5594e6a04bbad41b2baa8d0457
+spec/scraper_spec.rb 677f633a04b574fbfa7ee0d96af0ee1e0ac6db8d

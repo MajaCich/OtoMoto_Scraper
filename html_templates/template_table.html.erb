@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Car Listings</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 8px; text-align: left; border: 1px solid #ddd; }
+    th { background-color: #f4f4f4; }
+    img { max-width: 150px; height: auto; }
+  </style>
+</head>
+<body>
+  <h1>Car Listings</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>URL</th>
+        <th>Brand</th>
+        <th>Model</th>
+        <th>Price</th>
+        <th>Image</th>
+        <th>Mileage</th>
+        <th>Fuel Type</th>
+        <th>Gearbox</th>
+        <th>Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% cars.each do |car| %>
+        <tr>
+          <td><a href="<%= car.url %>"><%= car.url %></a></td>
+          <td><%= car.brand %></td>
+          <td><%= car.model %></td>
+          <td><%= car.price %></td>
+          <td><img src="<%= car.image %>" alt="Car Image"></td>
+          <td><%= car.mileage %></td>
+          <td><%= car.fuel_type %></td>
+          <td><%= car.gearbox %></td>
+          <td><%= car.year %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</body>
+</html>

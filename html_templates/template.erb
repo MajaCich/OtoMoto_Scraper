@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Car Listings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .car-listing {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: row;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      page-break-inside: avoid;
+      padding: 10px; 
+    }
+    .car-details {
+      width: 640px;
+      -webkit-justify-content: left;
+      border-radius: 5px;
+      margin: 20px;
+      margin-right: 30px;
+      padding: 10px;
+    }
+    .car-image {
+      width: 300px;
+      margin: 10px;
+      padding: 5px;
+    }
+    .car-image img {
+      object-fit: contain;
+      width: 100%;
+      height: 200px;
+      padding: 15px;
+    }
+    .car-details h2 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 1.5em;
+    }
+    .car-details p {
+      margin: 5px 0;
+    }
+    .car-info {
+      display: -webkit-box;
+      flex-wrap: wrap;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      margin-top: 20px;
+      margin-right: 30px;
+    }
+    .car-info p {
+      flex: 1 1 50%;
+      margin: 5px 0;
+      padding: 5px;
+    }
+    .car-price {
+      text-align: left;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 10px;
+      margin-left: 0px;
+      margin-top: 20px;
+    }
+    a {
+        padding: 10,
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Car listings</h1>
+  <h2> From Otomoto.pl </h2>
+  <% cars.each do |car| %>
+  <div class="car-listing">
+    <div class="car-image">
+      <img src="<%= car.image %>" alt="Car Image">
+    </div>
+    <div class="car-details">
+      <h2><%= car.model %></h2>
+      <a href="<%= car.url %>">Link do ogłoszenia</a>
+      <div class="car-price">
+        <%= car.price %> PLN
+      </div>
+      <div class="car-info">
+        <p><%= car.mileage %></p>
+        <p> <%= car.fuel_type %></p>
+        <p> <%= car.gearbox %></p>
+        <p> <%= car.year %></p>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</body>
+</html>
