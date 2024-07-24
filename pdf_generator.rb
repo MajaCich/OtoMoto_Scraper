@@ -33,12 +33,16 @@ class PDF_Generator
      rescue
       @logger.warn("Error while opening file")
      end
- 
-     # Create an ERB instance with the template
-     erb = ERB.new(template)
- 
-     # Render the HTML with the data
-     return html_content = erb.result(binding)
+     
+     begin
+      # Create an ERB instance with the template
+      erb = ERB.new(template)
+      # Render the HTML with the data
+      return html_content = erb.result(binding)
+     rescue StandardError => e
+      @logger.warn("Error while creating html content: #{e.message}")
+     end
+
   end
 
   # Generates a PDF file from a list of cars
@@ -46,16 +50,24 @@ class PDF_Generator
   # @param cars [Array<Car>] an array of car objects
   # @return [void]
   def generate_pdf(cars)
+
+    if cars.empty?
+      @logger.warn("Array is empty")
+      return
+    end
+
     html_content = generate_content(cars)
     begin
-    pdf_content = WickedPdf.new.pdf_from_string(html_content)
-    File.open('cars.pdf', 'wb') do |file|
-      file << pdf_content
-    end
+      pdf_content = WickedPdf.new.pdf_from_string(html_content)
+      File.open('cars.pdf', 'wb') do |file|
+        file << pdf_content
+      end
+      puts "pdf został wygenerowany!"
+      @logger.info("PDF is successfully generated!")
     rescue
+       puts "Nie udało się wygenerować pdf'a"
       @logger.warn("Error while saving data to pdf")
     end
-    @logger.info("PDF is successfully generated!")
   end
 
   # Generates HTML content for a table from a template and a list of cars
@@ -67,18 +79,26 @@ class PDF_Generator
     template_path = './html_templates/template_table.html.erb'
 
     begin
-    # Read the template file
-    template = File.read(template_path)
+      # Read the template file
+      template = File.read(template_path)
     rescue
       @logger.warn("Error while opening file")
     end
 
+    if cars.empty?
+      @logger.warn("Array is empty")
+      return
+    end
 
-    # Create an ERB instance with the template
-    erb = ERB.new(template)
+     begin
+      # Create an ERB instance with the template
+      erb = ERB.new(template)
+      # Render the HTML with the data
+      return html_content = erb.result(binding)
+     rescue StandardError => e
+      @logger.warn("Error while creating html content: #{e.message}")
+     end
 
-    # Render the HTML with the data
-    return html_content = erb.result(binding)
   end 
 
   # Generates a PDF file with a table from a list of cars
@@ -86,15 +106,23 @@ class PDF_Generator
   # @param cars [Array<Car>] an array of car objects
   # @return [void]
   def generate_pdf_table(cars)
+
+    if cars.empty?
+      @logger.warn("Array is empty")
+      return
+    end
+
     html_content = generate_content_table(cars)
     begin
       pdf_content = WickedPdf.new.pdf_from_string(html_content)
       File.open('simple_pdf.pdf', 'wb') do |file|
         file << pdf_content
       end
+      puts "pdf został wygenerowany!"
+      @logger.info("PDF is successfully generated!")
     rescue 
+      puts "Nie udało się wygenerować pdf'a"
       @logger.warn("Error while saving data to pdf")
     end
-    @logger.info("PDF is successfully generated!")
   end
 end

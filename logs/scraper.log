@@ -2472,3 +2472,29 @@ E, [2024-07-23T10:11:08.973720 #10132] ERROR -- : Error while scraping page http
 I, [2024-07-23T10:11:08.973893 #10132]  INFO -- : Finished scraping data. Total cars scraped: 0
 I, [2024-07-23T10:36:38.334563 #25659]  INFO -- : Starting to scrape data from https://www.otomoto.pl/osobowe/ for brand bmw
 I, [2024-07-23T10:36:42.541297 #25659]  INFO -- : Finished scraping data. Total cars scraped: 64
+I, [2024-07-23T11:02:42.783681 #9120]  INFO -- : Starting to scrape data from https://www.otomoto.pl/osobowe/ for brand ford
+I, [2024-07-23T11:02:44.170740 #9120]  INFO -- : Finished scraping data. Total cars scraped: 64
+I, [2024-07-23T11:03:15.938036 #9608]  INFO -- : Starting to scrape data from https://www.otomoto.pl/osobowe/ for brand abc
+I, [2024-07-23T11:03:18.521490 #9608]  INFO -- : Finished scraping data. Total cars scraped: 64
+I, [2024-07-23T11:14:05.353511 #16283]  INFO -- : Starting to scrape data from https://www.otomoto.pl/osobowe/ for brand abc
+I, [2024-07-23T11:14:09.340387 #16283]  INFO -- : Finished scraping data. Total cars scraped: 64
+I, [2024-07-23T11:15:37.121986 #17272]  INFO -- : Starting to scrape data from https://www.otomoto.pl/osobowe/ for brand abc
+I, [2024-07-23T11:15:42.074408 #17272]  INFO -- : Finished scraping data. Total cars scraped: 64
+I, [2024-07-23T11:16:20.800676 #17788]  INFO -- : Starting to scrape data from https://www.otomoto.pl/osobowe/ for brand abc
+I, [2024-07-23T11:16:25.480112 #17788]  INFO -- : Finished scraping data. Total cars scraped: 64
+I, [2024-07-23T11:48:45.847274 #5180]  INFO -- : Starting to scrape data from https://www.otomoto.pl/osobowe/ for brand bmw
+I, [2024-07-23T11:48:51.235630 #5180]  INFO -- : Finished scraping data. Total cars scraped: 64
+I, [2024-07-24T07:08:49.088090 #2329]  INFO -- : Starting to scrape data from https://www.otomoto.pl/osobowe/ for brand audi
+I, [2024-07-24T07:08:51.889141 #2329]  INFO -- : Finished scraping data. Total cars scraped: 64
+I, [2024-07-24T07:10:34.842610 #3569]  INFO -- : Starting to scrape data from https://www.otomoto.pl/osobowe/ for brand abccc
+I, [2024-07-24T07:10:37.402950 #3569]  INFO -- : Finished scraping data. Total cars scraped: 64
+I, [2024-07-24T07:12:07.573523 #4575]  INFO -- : Starting to scrape data from https://www.otomoto.pl/osobowe/ for brand abcc
+I, [2024-07-24T07:12:16.154777 #4575]  INFO -- : Finished scraping data. Total cars scraped: 64
+I, [2024-07-24T07:16:36.007839 #7427]  INFO -- : Starting to scrape data from https://www.otomoto.pl/osobowe/ for brand bmw
+I, [2024-07-24T07:16:38.201156 #7427]  INFO -- : Finished scraping data. Total cars scraped: 64
+I, [2024-07-24T07:17:40.649013 #8183]  INFO -- : Starting to scrape data from https://www.otomoto.pl/osobowe/ for brand audi
+I, [2024-07-24T07:17:43.856642 #8183]  INFO -- : Finished scraping data. Total cars scraped: 64
+I, [2024-07-24T07:19:46.683786 #9586]  INFO -- : Starting to scrape data from https://www.otomoto.pl/osobowe/ for brand bmw
+I, [2024-07-24T07:19:48.325725 #9586]  INFO -- : Finished scraping data. Total cars scraped: 64
+I, [2024-07-24T07:20:08.106143 #9895]  INFO -- : Starting to scrape data from https://www.otomoto.pl/osobowe/ for brand bmw
+I, [2024-07-24T07:20:10.398196 #9895]  INFO -- : Finished scraping data. Total cars scraped: 64

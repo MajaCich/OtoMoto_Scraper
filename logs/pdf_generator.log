@@ -54,3 +54,14 @@ I, [2024-07-23T10:01:47.414908 #6292]  INFO -- : PDF is successfully generated!
 I, [2024-07-23T10:11:08.946806 #10132]  INFO -- : PDF is successfully generated!
 I, [2024-07-23T10:11:08.958024 #10132]  INFO -- : PDF is successfully generated!
 I, [2024-07-23T10:36:46.016028 #25659]  INFO -- : PDF is successfully generated!
+I, [2024-07-23T11:02:48.376730 #9120]  INFO -- : PDF is successfully generated!
+I, [2024-07-23T11:48:55.518299 #5180]  INFO -- : PDF is successfully generated!
+I, [2024-07-24T07:08:56.042318 #2329]  INFO -- : PDF is successfully generated!
+W, [2024-07-24T07:10:41.693388 #3569]  WARN -- : Error while saving data to pdf
+I, [2024-07-24T07:10:41.693734 #3569]  INFO -- : PDF is successfully generated!
+I, [2024-07-24T07:12:18.267881 #4575]  INFO -- : PDF is successfully generated!
+I, [2024-07-24T07:16:42.122735 #7427]  INFO -- : PDF is successfully generated!
+W, [2024-07-24T07:17:45.994397 #8183]  WARN -- : Error while saving data to pdf
+I, [2024-07-24T07:17:45.994719 #8183]  INFO -- : PDF is successfully generated!
+W, [2024-07-24T07:19:50.393728 #9586]  WARN -- : Error while saving data to pdf
+I, [2024-07-24T07:20:12.280012 #9895]  INFO -- : PDF is successfully generated!

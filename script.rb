@@ -2,6 +2,12 @@ require './scraper.rb'
 require 'csv'
 require './pdf_generator.rb'
 
+#Read user input
+puts "Podaj markę samochodu:"
+brand = gets.chomp # Wczytuje wejście użytkownika i usuwa znak nowej linii
+brand = brand.downcase # Zamienia wszystkie litery na małe
+puts "Proszę czekać . . ."
+
 # Initializes a new instance of the Scraper class and scrapes data from the specified URL.
 #
 # @example
@@ -12,7 +18,7 @@ require './pdf_generator.rb'
 # @param brand [String] The brand of cars to scrape.
 # @param page_number [Integer] The page number to scrape.
 # @return [Array<Car>] An array of car objects scraped from the website.
-scraper = Scraper.new('https://www.otomoto.pl/osobowe/', 'bmw', 2)
+scraper = Scraper.new('https://www.otomoto.pl/osobowe/', brand, 2)
 
 #scrape data
 cars = scraper.scrape_data()
